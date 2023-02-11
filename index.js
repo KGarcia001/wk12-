@@ -27,17 +27,14 @@ class AnimeService{
 
     static updateAnime(anime){
         return $.ajax({
-            url: this.url + `/${anime._id}`,
+            url: this.url + `/${anime.id}`,
             dataType: 'json',
             data: JSON.stringify(anime),
             contentType: 'application/json',
             type: 'PUT'
         });
     }
-//   static deleteAnime(id) {
-//          return $.delete(this.url + `/${id}`);
-//         }
-     
+
 
     static deleteAnime(id) {
         return $.ajax({
@@ -79,12 +76,13 @@ class DOMManager {
 
     static render(animes){ 
         $('#app').empty();
+        console.log(animes)
         for (let anime of animes) {
             $('#app').prepend(
-                `<div id = "${anime._id}" class="card">
+                `<div id = "${anime.id}" class="card">
                     <div class ="card-header">
                     <h2>${anime.name}</h2>
-                    <button class = "btn btn-danger" onclick="DOMManager.deleteAnime('${anime._id}')">Delete</button>
+                    <button class = "btn btn-danger" onclick="DOMManager.deleteAnime('${anime.id}')">Delete</button>
                     </div>
                 </div>
              <br> `
