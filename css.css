@@ -1,0 +1,63 @@
+
+
+body {
+    background-color:rgb(236, 207, 169);
+    border-style:dashed;
+    border-color:darkolivegreen ;
+    border-radius:8px;
+    width: auto;
+    text-align: center; 
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration:dotted ;
+    display:block;
+    font-size: 12px;
+  }
+
+  .btn:hover{
+    background-color: rgb(0, 0, 0);
+  }
+
+  img{
+    border-style:dashed;
+    border-color:darkolivegreen;
+    border-radius:500px;
+    width: auto;
+    text-align: center; 
+
+}
+
+
+
+#create-new-anime{
+    background-color:#4CAF50 ;
+    width: fit-content;
+    margin: auto;
+    
+}
+
+#new-anime-name{
+    background-color: white;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+
+
+#new-anime{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-style:oblique; 
+    text-decoration:underline;
+    font-size: larger;
+   
+    
+}
+
+
